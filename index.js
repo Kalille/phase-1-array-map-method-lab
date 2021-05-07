@@ -12,11 +12,16 @@ const tutorials = [
 ];
 
 const titleCased = (array) => {
-  array.map(words=>{
+ 
+ 
+ 
+  return tutorials.map(words=>{
     
-    const letters = words.split(" ")
+    const letters = words.split(" ");
 
-    const mapped = letters.map(cap=> cap[0].toUpperCase() + cap.splice(1))
+    const mapped = letters.map(cap=> cap.charAt(0).toUpperCase() + cap.slice(1));
+    const result = mapped.join(" ")
+    return result
   })
 // // let size = array.length
 //  let wordArray = array.split(" ")
